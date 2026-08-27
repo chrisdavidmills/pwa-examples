@@ -13,11 +13,12 @@ img {
   width: 100%;
 }
 
-.add-button {
+#button-bar {
   position: absolute;
   top: 1px;
   left: 1px;
-  display: none;
+  display: flex;
+  gap: 10px;
 }
 
 @media (orientation: landscape) {

@@ -1,14 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>A2HS demo</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
     <script src="index.js" defer></script>
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body>
-    <img src="images/fox1.jpg" alt="a fox picture">
-    <button class="add-button">Add to home screen</button>
+    <img src="images/fox1.jpg" alt="a fox picture" />
+    <div id="button-bar">
+      <button class="add-button">Add to home screen</button>
+      <install manifest="manifest.webmanifest"></install>
+      <button id="install-test">Install app</button>
+    </div>
   </body>
 </html>
