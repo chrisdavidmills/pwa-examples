@@ -56,6 +56,6 @@ const installBtn = document.querySelector("#install-test");
 installBtn.addEventListener("click", () => {
   console.log("test");
   navigator.install({
-    manifest: "http://localhost:7900/js13kpwa/js13kpwa.webmanifest",
+    manifest: "manifest.webmanifest",
   });
 });
