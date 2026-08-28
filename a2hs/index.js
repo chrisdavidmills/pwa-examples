@@ -56,6 +56,7 @@ const installBtn = document.querySelector("#install-test");
 installBtn.addEventListener("click", () => {
   console.log("test");
   navigator.install({
-    manifest: "/pwa-examples/a2hs/manifest.webmanifest",
+    manifest:
+      "https://chrisdavidmills.github.io/pwa-examples/a2hs/manifest.webmanifest",
   });
 });
