@@ -60,7 +60,10 @@ installBtn.addEventListener("click", () => {
       manifest:
         "https://chrisdavidmills.github.io/pwa-examples/a2hs/manifest.webmanifest",
     })
-    .then((result) => console.log(result));
+    .then((result) => console.log(result))
+    .catch((e) => console.log(e));
+  // fulfils with empty object on success
+  // rejects with AbortError if cancel button pressed
 });
 
 // <install> interface test
