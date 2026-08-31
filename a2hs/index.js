@@ -55,8 +55,31 @@ const installBtn = document.querySelector("#install-test");
 
 installBtn.addEventListener("click", () => {
   console.log("test");
-  navigator.install({
-    manifest:
-      "https://chrisdavidmills.github.io/pwa-examples/a2hs/manifest.webmanifest",
-  });
+  navigator
+    .install({
+      manifest:
+        "https://chrisdavidmills.github.io/pwa-examples/a2hs/manifest.webmanifest",
+    })
+    .then((result) => console.log(result));
 });
+
+// <install> interface test
+
+const installElem = document.querySelector("install");
+console.log(installElem);
+console.log(installElem.manifestId);
+console.log(installElem.manifest);
+
+installElem.addEventListener("installresult", (e) => {
+  console.log(`installresult: ${e.result}`);
+  // success/aborted
+});
+
+// Not fired
+// installElem.addEventListener("promptaction", () => {
+//   console.log("promptaction fired");
+// });
+
+// installElem.addEventListener("promptdismiss", () => {
+//   console.log("promptdismiss fired");
+// });
