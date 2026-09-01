@@ -72,10 +72,18 @@ const installElem = document.querySelector("install");
 console.log(installElem);
 console.log(installElem.manifestId);
 console.log(installElem.manifest);
+console.log(installElem.isValid);
+console.log(installElem.invalidReason);
+console.log(installElem.initialPermissionStatus);
+console.log(installElem.permissionStatus);
 
 installElem.addEventListener("installresult", (e) => {
-  console.log(`installresult: ${e.result}`);
+  console.log(`Install result: ${e.result}`);
   // success/aborted
+});
+
+installElem.addEventListener("validationstatuschange", (e) => {
+  console.log(e);
 });
 
 // Not fired
