@@ -59,7 +59,6 @@ installBtn.addEventListener("click", () => {
     .install({
       manifest:
         "https://chrisdavidmills.github.io/pwa-examples/a2hs/manifest.webmanifest",
-      manifestId: "https://chrisdavidmills.github.io/pwa-examples/a2hs/v1",
     })
     .then((result) => console.log(result))
     .catch((e) => console.log(e));
