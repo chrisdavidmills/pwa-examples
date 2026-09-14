@@ -4,8 +4,8 @@ const manifests = [
   "https://diek.us/pwinter/manifest.json",
 ];
 const manifestIds = [
-  "https://mdn.github.io/pwa-examples/a2hs/v1",
-  "https://mdn.github.io/pwa-examples/cycletracker/service_workers/v1",
+  "https://mdn.github.io/pwa-examples/a2hs/index.html",
+  "https://mdn.github.io/pwa-examples/cycletracker/service_workers/",
   "https://diek.us/pwinter/index.html?randomize=true",
 ];
 
